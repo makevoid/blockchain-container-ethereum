@@ -1,4 +1,4 @@
-# blockchain-container
+# blockchain-container-ethereum
 Base Bapp2 Blockchain Docker Container
 
 
@@ -7,7 +7,7 @@ Dockerfile definition to start with some useful tools - this is the base image f
 Features:
 
 - solc
-- geth 
+- geth
 - parity
 - nodejs (latest v6)
 - ruby (2.3.x)
@@ -16,7 +16,11 @@ Plus:
 
 - build-tools package
 - A simple script to get the container id (based on the container ip)
-- run everything on one container (simple for bootstrapping a full instance that contains both the blockchain process and your app) - you can add an optional redis container per blockchain node/server instance and use that as a cache and/or you can use a shared redis for exchanging messages between nodes/instances, build a pub/sub based system, etc... 
+- run everything on one container (simple for bootstrapping a full instance that contains both the blockchain process and your app) - you can add an optional redis container per blockchain node/server instance and use that as a cache and/or you can use a shared redis for exchanging messages between nodes/instances, build a pub/sub based system, etc...
+
+### Changelog
+
+- updated to the latest version of parity (1.4.5)
 
 
 
